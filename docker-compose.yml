@@ -1,0 +1,15 @@
+version: "3"
+
+services : 
+  MYSQLDB:
+      image: mysql:5.7
+      container_name : BancoNest
+      environment:
+              MYSQL_ROOT_PASSWORD: root 
+      ports:
+        - "3306:3306"
+      # networks:
+      #   - redeBackEnd
+# networks:
+#   redeBackEnd:
+#     driver: bridge
